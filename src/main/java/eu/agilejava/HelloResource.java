@@ -30,7 +30,7 @@ public class HelloResource {
 
         Greeting greeting = Greeting.findById(id);
 
-        if( greeting == null ) {
+        if (greeting == null) {
             return Response.status(Response.Status.NOT_FOUND).build();
         }
 
