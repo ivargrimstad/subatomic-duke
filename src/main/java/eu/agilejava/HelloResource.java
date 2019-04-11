@@ -16,8 +16,8 @@ import java.util.List;
 public class HelloResource {
 
     @Inject
-    @ConfigProperty(name = "key")
-    private String prop;
+    @ConfigProperty(name = "message")
+    private String message;
 
     @GET
     public List<Greeting> all() {
