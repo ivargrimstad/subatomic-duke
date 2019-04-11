@@ -1,7 +1,6 @@
 package eu.agilejava;
 
 import io.quarkus.hibernate.orm.panache.PanacheEntity;
-import io.quarkus.runtime.annotations.RegisterForReflection;
 
 import javax.persistence.*;
 import java.util.Objects;
@@ -19,6 +18,10 @@ public class Greeting extends PanacheEntity {
     private Long id;
     private String message;
 
+    public Greeting() {
+
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -31,12 +34,6 @@ public class Greeting extends PanacheEntity {
     @Override
     public int hashCode() {
         return Objects.hash(id, message);
-    }
-
-
-
-    public Greeting() {
-
     }
 
     public Long getId() {
