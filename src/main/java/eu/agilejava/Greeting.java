@@ -19,7 +19,6 @@ public class Greeting extends PanacheEntity {
     private String message;
 
     public Greeting() {
-
     }
 
     @Override
