@@ -16,7 +16,7 @@ public class HelloResourceTest {
           .when().get("/messages/1")
           .then()
              .statusCode(200)
-             .body(is("{\"persistent\":true,\"message\":\"Howdy\"}"));
+             .body(is("{\"persistent\":true,\"message\":\"Howdy Duke\"}"));
     }
 
 }

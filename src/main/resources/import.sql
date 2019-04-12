@@ -1,1 +1,1 @@
-insert into greeting(id,message) values (1, 'Howdy')
+insert into greeting(id,message) values (1, 'Howdy Duke')
